@@ -1,4 +1,12 @@
 #!/usr/bin/make -f
 
+export DH_GOLANG_INSTALL_EXTRA := test
+
 %:
-	dh $@
+	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
+
+# skip install /usr/bin/test
+override_dh_auto_build:
+	DH_GOLANG_EXCLUDES="sylabs/sif/test" \
+	dh_auto_build --builddirectory=_build --buildsystem=golang
+

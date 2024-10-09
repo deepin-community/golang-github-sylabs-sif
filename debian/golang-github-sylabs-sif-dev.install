@@ -1,0 +1,5 @@
+usr/share/gocode/src/github.com/sylabs/sif/go.mod
+usr/share/gocode/src/github.com/sylabs/sif/go.sum
+usr/share/gocode/src/github.com/sylabs/sif/internal
+usr/share/gocode/src/github.com/sylabs/sif/pkg
+usr/share/gocode/src/github.com/sylabs/sif/test
